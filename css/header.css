@@ -1,0 +1,368 @@
+.main-header {
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0px 7px 114px -10px rgba(133,133,133,0.5);
+}
+
+.header__container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+
+.header__logo {
+    margin-right: 30px;
+}
+
+.header__nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav__close-button {
+    display: none;
+}
+
+.nav__list {
+    display: flex;
+    list-style-type: none;
+}
+
+.nav__item {
+    margin-right: 84px;
+}
+
+.nav__link {
+    position: relative;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    text-decoration: none;
+    color: #333333;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transition: color 0.3s ease-in-out;
+}
+
+.nav__link:focus {
+    outline: 2px solid #FF9900;
+    outline-offset: 3px;
+}
+
+.nav__link::after {
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    height: 2px;
+    width: 100%;
+    content: "";
+    background-color: #FF9900;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out,
+                background-color 0.3s ease-in-out;
+}
+
+.nav__link:hover::after {
+    opacity: 1;
+}
+
+.nav__link:active {
+    color: #E1670E;
+}
+
+.nav__link:active::after {
+    background-color: #E1670E;
+}
+
+.nav__button {
+    width: 25px;
+    height: 25px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.nav__button .nav__svg-line {
+    transition: fill 0.3s ease-in-out;
+}
+
+.nav__button .nav__svg-circle {
+    transition: stroke 0.3s ease-in-out;
+}
+
+.nav__button:hover .nav__svg-circle {
+    stroke: #FF9900;
+}
+
+.nav__button:hover .nav__svg-line {
+    fill: #FF9900;
+}
+
+.nav__button:focus {
+    outline: 2px solid #FF9900;
+    outline-offset: 5px;
+}
+
+.menu__button {
+    position: relative;
+    display: none;
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-top: 3px solid #000000;
+    background-color: transparent;
+    cursor: pointer;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.menu__button::before {
+    content: "";
+    position: absolute;
+    top: 7px;
+    right: 0;
+    width: 30px;
+    height: 3px;
+    background-color: #000000;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.menu__button::after {
+    content: "";
+    position: absolute;
+    top: 16px;
+    right: 0;
+    width: 30px;
+    height: 3px;
+    background-color: #000000;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.menu__button:hover,
+.menu__button:focus,
+.menu__button:active {
+    border-color: #FF9900;
+}
+.menu__button:hover::before,
+.menu__button:hover::after,
+.menu__button:focus::before,
+.menu__button:focus::after,
+.menu__button:active::before,
+.menu__button:active::after {
+    background-color: #FF9900;
+}
+
+.search-form {
+    position: absolute;
+    right: 75px;
+    top: 25px;
+
+    display: none;
+    align-items: center;
+    max-width: 100%;
+    width: 539px;
+    height: 60px;
+    padding: 16px 18px 16px 32px;
+    border-radius: 16px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.12);
+
+    background: #FFFFFF;
+}
+
+.search-form--active {
+    display: flex;
+}
+
+.search-form__input {
+    width: 412px;
+    height: 100%;
+    margin-right: 14px;
+    border: none;
+    border-bottom: 1px solid #DCDCDC;
+}
+
+.search-form__input:focus {
+    outline: none;
+}
+
+.search-form__input::placeholder{
+    font-size: 18px;
+    font-weight: 500;
+    color: #ADADAD;
+}
+
+.search-form__submit {
+    width: 24px;
+    height: 24px;
+
+    margin-right: 20px;
+
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.search-form__close {
+    width: 24px;
+    height: 24px;
+
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.search-form__submit rect,
+.search-form__close rect {
+    transition: fill 0.3s ease-in-out;
+}
+
+.search-form__submit circle,
+.search-form__close circle {
+    transition: stroke 0.3s ease-in-out;
+}
+
+.search-form__submit:hover circle,
+.search-form__close:hover circle {
+    stroke: #FF9900;
+}
+
+.search-form__submit:hover rect,
+.search-form__close:hover rect {
+    fill: #FF9900;
+}
+
+.search-form__submit:active circle,
+.search-form__close:active circle {
+    stroke: #333333;
+}
+
+.search-form__submit:active rect,
+.search-form__close:active rect {
+    fill: #333333;
+}
+
+.search-form__submit:focus,
+.search-form__close:focus {
+    outline: 2px solid #FF9900;
+    outline-offset: 5px;
+}
+
+
+@media (max-width: 1200px) {
+    .header__logo {
+        width: 150px;
+    }
+
+    .nav__link {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .nav__item {
+        margin-right: 49px;
+    }
+
+    .header__container {
+        padding-top: 18px;
+        padding-bottom: 18px;
+    }
+
+    .search-form {
+        right: 50px;
+        top: 15px;
+    }
+}
+
+@media (max-width: 992px) {
+    .nav__wrapper {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 3;
+        padding: 80px 80px 60px;
+        background-color: white;
+        box-shadow: 0px 7px 114px -10px rgb(133 133 133 / 30%);
+        opacity: 0;
+        transform: translateY(-100%);
+        transition: opacity 0.3s ease-in-out,
+                    transform 0.3s ease-in-out;
+    }
+
+    .search-form {
+        width: 420px;
+    }
+
+    .menu__button {
+        display: block;
+    }
+
+    .nav__wrapper--active {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+   .nav__item {
+        margin-right: 0;
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+
+    .nav__list {
+        flex-direction: column;
+    }
+
+    .nav__link {
+        text-shadow: none;
+    }
+
+    .nav__close-button {
+        position: absolute;
+        top: 20px;
+        left: 20px;   
+        display: block;
+        width: 25px;
+        height: 25px;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 576px) {
+    .header__logo {
+        width: 97px;
+    }
+
+    .menu__button {
+        width: 25px;
+        height: 25px;
+    }
+
+    .menu__button::before {
+        width: 25px;
+        top: 6px;
+    }
+
+    .menu__button::after {
+        width: 25px;
+        top: 14px;
+    }
+
+    .search-form {
+        right: 15px;
+        top: 5px;
+
+        width: 290px;
+        padding: 10px 12px 10px 24px;
+    }
+
+    .search-form__input {
+        width: 180px;
+    }
+
+    .search-form__submit {
+        margin-right: 15px;
+    }
+}

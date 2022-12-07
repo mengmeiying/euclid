@@ -1,0 +1,126 @@
+.promo__item {
+    padding: 103px 78px 91px;
+    color: #fff;
+    position: relative;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.promo__item > * {
+    pointer-events: initial;
+}
+
+.promo__slide {
+    background-color: #ADF2F5;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.promo__slide--1 {
+    background-image: url(../img/low-angle-photo-of-balconies-24620151.jpg);
+}
+
+.promo__slide--2 {
+    background-image: url(../img/brown-and-blue-glass-building-2093076\ 2.jpg);
+}
+
+.promo__slide--3 {
+    background-image: url(../img/apartment-apartment-building-architecture-building-323705\ 2.jpg);
+}
+
+.swiper-box {
+    position: relative;
+}
+
+.swiper {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.promo__text-container {
+    max-width: 840px;
+}
+
+.promo__heading {
+    margin: 0;
+    margin-bottom: 15px;
+
+    font-weight: 800;
+    font-size: 72px;
+    line-height: 88px;
+    letter-spacing: -1px;
+}
+
+.promo__text {
+    margin: 0;
+    margin-bottom: 97px;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+} 
+
+.promo__button {
+    padding: 23px 33px;
+
+    font-size: 24px;
+    line-height: 29px;
+    text-decoration: none;
+}
+
+@media (max-width: 1200px) {
+    .promo__heading {
+        font-size: 60px;
+        line-height: 73px;
+    }
+
+    .promo__text {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .promo__item {
+        padding: 160px 42px 114px 45px;
+    }
+}
+
+@media (max-width: 576px) {
+    .promo__item {
+        padding: 32px 50px 40px 50px;
+        text-align: center;
+    }
+
+    .promo__heading {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .promo__text {
+        margin-bottom: 30px;
+        font-size: 14px;
+        line-height: 22px;
+        font-weight: 500;
+    }
+
+    .promo__button {
+        font-size: 12px;
+        line-height: 15px;
+        padding: 9px 30px;
+    }
+}
+
+@media (max-width: 320px) {
+    .promo__item {
+        padding: 32px 21px 40px 22px;
+    }
+
+    .promo__heading {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .promo__text {
+        font-size: 12px;
+        line-height: 15px;
+    }
+}

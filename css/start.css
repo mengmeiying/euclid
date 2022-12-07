@@ -1,0 +1,32 @@
+.swiper-pagination-bullet {
+    height: 15px;
+    width: 15px;
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.swiper-pagination-bullet-active {
+    background: #FFFFFF;
+}
+
+.ui-state-active {
+    background-color: initial;
+    border: initial;
+    color: #333333;
+}
+
+.ui-widget-content {
+    border: initial;
+}
+
+.ui-state-default {
+    background-color: initial;
+    border: initial;
+}
+
+.ui-icon {
+    display: none;
+}
+
+.ui-accordion .ui-accordion-header {
+    margin-top: -1px;
+}

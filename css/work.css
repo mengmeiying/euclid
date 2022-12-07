@@ -1,0 +1,184 @@
+.work {
+    padding-top: 98px;
+}
+
+.work__heading {
+    line-height: 59px;
+    margin-bottom: 53px;
+}
+
+.work-card {
+    display: flex;
+}
+
+.work__steps-list {
+    display: flex;
+    padding: 0;
+    margin-bottom: 46px;
+
+    list-style-type: none;
+}
+
+.work__steps-item {
+    margin-right: 90px;
+}
+
+.work__steps-link {
+    border: none;
+    background-color: transparent;
+    font-size: 18px;
+    line-height: 22px;
+    color: #333333;
+    cursor: pointer;
+
+    transition: color 0.3s ease-in-out;
+}
+
+.work__steps-link:hover {
+    color: #FF9900;
+}
+
+.work__steps-link:focus {
+    outline: 2px solid #FF9900;
+    outline-offset: 3px;
+}
+
+.work__steps-link:active {
+    color: #E1670E;
+}
+
+.work__steps-link--active {
+    color: #FF9900;
+}
+
+.work__cards-list {
+    padding: 0;
+}
+
+.work__cards-item {
+    display: none;
+}
+
+.work__cards-item--active {
+    display: flex;
+}
+
+.work-card__text-container {
+    max-width: 758px;
+    margin-right: auto;
+}
+
+.work-card__heading {
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.work-card__text {
+    margin-bottom: 65px;
+    margin-right: 30px;
+    line-height: 32px;
+}
+
+.work-card__buttons-container {
+    display: flex;
+}
+
+.work-card__button--more {
+    text-decoration: none;
+    margin-right: 30px;
+}
+
+.work-card__button--contract {
+    padding: 21px 40px;
+    background-color: transparent;
+    color: #333;
+    border: 1px solid #333;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out, border 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.work-card__button--contract:hover {
+    background-color: #666666;
+    border: 1px solid #333;
+    color: #fff;
+}
+
+.work-card__button--contract:focus {
+    border: 1px solid #333;
+    background-color: #666666;
+    color: #fff;
+}
+
+.work-card__button--contract:active {
+    border: 1px solid #333;
+    background-color: #000000;
+    color: #fff;
+}
+
+.work-card__image {
+    width: calc((100%-30px)/2);
+    object-fit: cover;
+}
+
+@media (max-width: 1200px) {
+    .work {
+        padding-top: 60px;
+    }
+
+    .work-card__text-container {
+        margin-right: 70px;
+    }
+
+    .work-card__text {
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+
+    .work-card__image {
+        width: calc((100%-30px)/2 - 30px);
+    }
+}
+
+@media (max-width: 992px) {
+    
+    .work {
+        padding-top: 40px;  
+    }
+
+    .work__heading {
+        margin-bottom: 19px;
+    }
+
+    .work-card {
+        flex-direction: column-reverse;
+    }
+
+    .work-card__image {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .work__steps-item {
+        margin-right: 44px;
+    }
+    .work__steps-link {
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .work-card__button {
+        padding: 7px 36px;
+        font-size: 12px;
+    }
+
+    .work-card__button--more {
+        padding: 7px 40px;
+        margin-right: 10px;
+    }
+
+    .work-card__button--contract {
+        padding: 7px 30px;
+    }
+}
